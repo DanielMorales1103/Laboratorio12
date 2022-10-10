@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+    <Button
+        android:id="@+id/boton_mantenerSesion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Mantener Sesión Activa"
+        android:layout_marginHorizontal="@dimen/margenhorizontal2"
+        />
+    <Button
+        android:id="@+id/boton_cerrarSesion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boton_mantenerSesion"
+        android:layout_marginHorizontal="@dimen/margenhorizontal2"
+        android:text="Cerrar Sesión"
+        />
+    <Button
+        android:id="@+id/boton_default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/boton_success"
+        app:layout_constraintTop_toBottomOf="@id/boton_cerrarSesion"
+        android:text="@string/defaultvalue"
+        />
+    <Button
+        android:id="@+id/boton_success"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/boton_default"
+        app:layout_constraintEnd_toStartOf="@id/boton_failure"
+        app:layout_constraintTop_toBottomOf="@id/boton_cerrarSesion"
+        android:text="@string/success"
+        />
+    <Button
+        android:id="@+id/boton_failure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/boton_success"
+        app:layout_constraintEnd_toStartOf="@id/boton_Empty"
+        app:layout_constraintTop_toBottomOf="@id/boton_cerrarSesion"
+        android:text="@string/failure"
+        />
+    <Button
+        android:id="@+id/boton_Empty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/boton_failure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boton_cerrarSesion"
+        android:text="@string/empty"
+        />
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/iconSize"
+        android:layout_height="@dimen/iconSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <TextView
+        android:id="@+id/textIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/letra"
+        android:text="probando"/>
+    <ProgressBar
+        android:id="@+id/progressBarHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

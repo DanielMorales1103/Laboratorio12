@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margenhorizontal">16dp</dimen>
+    <dimen name="margintop">24dp</dimen>
+    <dimen name="margenhorizontal2">8dp</dimen>
+    <dimen name="margenhorizontal3">4dp</dimen>
+    <dimen name="iconSize">70dp</dimen>
+    <dimen name="letra">16dp</dimen>
+</resources>
